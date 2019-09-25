@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculadora de propinas</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+     
+        <div id="container">
+        <h1>Calculadora de propinas</h1>
+        </div>
+
+        <form>
+            <p>¿Total de la cuenta?</p>
+            <p>
+                $ <input id= "cuentaTotal" type="text" placeholder="¿Cuánto gastaste?">
+            
+            <p>¿Cómo fue el servicio?
+                <p>
+                    <select id="servicio"> 
+                        <option disabled selected value="0">--Elije una opción--</option>
+                        <option value="0.3">20 %  - Excelente</option>
+                        <option value="0.3">15 %  - Muy bueno</option>
+                        <option value="0.3">10 %  - Bueno</option>
+                        <option value="0.3"> 5 %  - Malo</option>
+                    </select>
+        </form>
+        <p>¿Entre cuántas personas se divide la cuenta?</p>
+        <p>
+            <input id="personas" type="text" placeholder="Número de personas">
+        <hr>
+        <button id="calculate" type="button" >Calcular</button>
+
+        <div id="cuentaTotal">
+            <p>
+            <sup>$ </sup><span id="propina" >0.00</span>
+            <small id="cadaUno">por persona</small>
+        </div>
+
+
+
+        
+        <script src="main.js" async defer></script>
+    </body>
+</html>
